@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 90vh;
+    background-color:  hsl(0, 0%, 94%);
+}
+.container{
+    width:450px;
+    height: auto;
+    padding: 20px;
+    margin: 10% auto;
+    border-radius: 10px 10px 80px 10px;
+    background-color:  hsl(0, 0%, 100%);
+    box-shadow: 3px 10px 2px  hsl(259, 72%, 34%);
+}
+.age-calculator{
+    text-align: center;
+    width: 150px;
+    padding: 8px;
+    height: auto;
+    background-color: hsl(259, 74%, 40%);
+    color: #fff;
+    font-family:'Courier New';
+    font-size: 10px;
+    margin-bottom: 25px;
+    border-radius: 0px 20px 20px  0;
+}
+header form,p.text {
+    display: flex;
+    align-items: flex-start;
+}
+header form {
+    justify-content: center;
+}
+p.text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+header form label input{
+    width: 100px;
+    height: 35px;
+    border: 1px solid hsl(0, 1%, 44%);
+    border-radius: 5px;
+    margin: 5px 15px 5px 0;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+}
+header form label input:hover{
+    cursor: pointer;
+    border: none;
+    outline: .5px solid  hsl(259, 100%, 65%);
+    transition: all .8s ease;
+}
+hr{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: 25px auto 0;
+}
+span.image-click img{
+    cursor: pointer;
+    position: relative;
+    top: -25px;
+    left: 340px;
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    border-radius: 50%;
+    background: hsl(259, 100%, 65%);
+}
+span.image-click img:hover{
+    cursor: pointer;
+    background: hsl(0, 0%, 8%);
+    transition: all .8s ease;
+}
+.main-content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    margin-top: -30px;
+    margin-left: 60px;
+    font-weight: 600;
+}
+span{
+  font-size: 50px;
+    color: hsl(259, 100%, 65%);
+}
+input::placeholder{
+    font-size: 15px;
+    text-align: center;
+    color: hsl(0, 1%, 44%);
+}
+#warningmsgYear,#warningmsgMonth,#warningmsgDay{
+    font-size: 10px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hsl(0, 100%, 67%);
+}
+form input #warningmsgYear{
+    outline: .5px solid  hsl(0, 100%, 67%);
+} 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    
+}
+.attribution a { 
+    color: hsl(228, 84%, 27%); 
+    text-decoration: none;
+    margin-left: 2px;
+}
+.attribution a:hover{
+    color:  hsl(32, 99%, 33%);
+}
+@media screen and (max-width: 450px){
+    .container{
+        width:92%;
+        height: auto;
+        margin: 10% auto ;
+    }
+    header form label input{
+        width: 80px;
+        margin: 5px 10px 5px 0;
+    }
+    hr{
+        margin: 50px auto 10px;
+    }
+    span.image-click img{
+        top: -35px;
+        left: 125px;
+    }
+    .main-content{
+        font-size: 45px;
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+    #warningmsgYear,#warningmsgMonth,#warningmsgDay{
+        font-size: 8px;
+    }
+    .age-calculator{
+        color: #fff;
+        font-size: 9px;
+    }
+}
